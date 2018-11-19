@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind
-  sides.sort = [side1, side2, side3]
+  sides = [side1, side2, side3]
    binding.pry
     if side1 <= 0 || side2 <= 0 || side3 <= 0
           raise TriangleError
