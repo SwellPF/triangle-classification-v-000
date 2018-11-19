@@ -9,8 +9,9 @@ class Triangle
   end
   
   def kind
-  # binding.pry
-    if side1 <= 0 || side2 <= 0 || side3 <= 0
+   binding.pry
+    sides = Array.new(side1, side2, side3)
+    if (side1 <= 0 || side2 <= 0 || side3 <= 0) || 
           raise TriangleError
     elsif side1 == side2 && side2 == side3
       :equilateral
