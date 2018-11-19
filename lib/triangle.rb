@@ -11,8 +11,8 @@ class Triangle
   def kind
   sides = [side1, side2, side3]
   sides.sort
-   binding.pry
-    if side1 <= 0 || side2 <= 0 || side3 <= 0
+   #binding.pry
+    if side1 <= 0 || side2 <= 0 || side3 <= 0 || (sides[0]+sides[1]) <= sides[2]
           raise TriangleError
     elsif side1 == side2 && side2 == side3
       :equilateral
