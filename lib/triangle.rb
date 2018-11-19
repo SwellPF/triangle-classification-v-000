@@ -10,6 +10,7 @@ class Triangle
   
   def kind
   sides = [side1, side2, side3]
+  sides.sort
    binding.pry
     if side1 <= 0 || side2 <= 0 || side3 <= 0
           raise TriangleError
